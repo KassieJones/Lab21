@@ -1,0 +1,27 @@
+body{
+	background: radial-gradient(circle, #ffe375, black);
+	font-family: Verdana;
+}
+
+h2{
+	font-color: blue;
+	background-color: yellow;
+}
+
+h3{
+	color: Green;
+}
+
+
+#header {
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	color: #ffe375;
+	background-color: black;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	display: block;
+}

@@ -3,18 +3,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+#header {
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	color: #ffe375;
+	background-color: black;
+	background-image: url("https://coffeeinmyveins.com/wp-content/uploads/2017/07/coffee-beans.jpg");
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	display: block;
+}
+
+
+
+
+
+
+
+
+</style>
 <title>Spring MVC</title>
+
 </head>
 <body>
+		<div id="container">
+		<div id="header">
+			GC Coffee <br> serving Java for Java<br>
+		</div>
+		</div>
 	<br>
 	<div style="text-align:center">
 		<h2>
-			Hello World!<br> <br>
+			Hello!<br>
 		</h2>
 		<h3>
-			<!-- .html is optional below -->
-			<a href="welcome.html">Click here to see the welcome page</a>
-			(check HomeController.java to view info for @RequestMapping("/welcome"))
+			Welcome to GC COFFEE <br>
+			<a href="welcome.html">Registration!</a>
+			
 		</h3>
 	</div>
 </body>
