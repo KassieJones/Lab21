@@ -55,13 +55,12 @@ body {
 		<br>
 
 		<form action="success" method="get">
-			First Name: <input type="text" name="firstName" placeholder="Jane"><br>
-			Last Name: <input type="text" name="lastName" placeholder="Doe"><br>
+			First Name: <input type="text" name="fName" placeholder="Jane"><br>
+			Last Name: <input type="text" name="lName" placeholder="Doe"><br>
 			Street Address: <input type="text" name="streetAddress"
 				placeholder="123 Main St."><br> City: <input
 				type="text" name="city" placeholder="Detroit"><br>
 			State: <input type="text" name="state" placeholder="MI"><br>
-			Zip: <input type="text" name="zip" placeholder="00000"><br>
 			Email: <input type="text" name="email" placeholder="janedoe@abc.com"><br>
 			Phone Number(xxx-xxx-xxxx): <input type="tel" name="phone"
 				placeholder="313-555-1212" pattern="\d{3}-\d{3}-\d{4}$"
