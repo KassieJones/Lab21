@@ -55,12 +55,6 @@ public class HomeController {
 		// Optional step, but you should always do this
 		con.close();
 		
-		
-		
-		
-		
-		
-		
 		String sayHello = "Hello, " + firstName + ".\n Your order will be right up! \n" + checkbox + ", " + drinkType
 				+ ", with " + milkType + ", with " + flavorShot;
 
@@ -84,7 +78,27 @@ public class HomeController {
 	}
 	
 	
-	
+	@RequestMapping("/welcome2")
+	public ModelAndView listAllCustomers() throws ClassNotFoundException, SQLException {
+		Connection con = getDBConnection();
+		String query = "SELECT * FROM items";
+		// step 4, create statement
+		PreparedStatement st = con.prepareStatement(query);
+
+		// step 5, retrieve results --- optional
+		ResultSet rs = st.executeQuery();
+
+		ArrayList<String> list = new ArrayList<>();
+
+		// step 6, processing results --- optional
+		while (rs.next()) {
+			String item = rs.getString(1);
+			String price = rs.getString(2);
+			list.add(item + " " + price);
+		}
+
+		return new ModelAndView("welcome2", "message", list);
+	}
 	
 	
 	

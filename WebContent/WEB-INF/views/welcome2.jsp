@@ -1,8 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html>
 <head>
+
 <style>
 
 body {
@@ -30,37 +32,44 @@ body {
 	overflow-x: hidden;
 	clear: both;
 	border: 1px solid;
-	margin-top: 110px;
+	margin-top: 155px;
 	text-align: center;
 	background-color: #fff5aa;
 }
 
 
 
-
-
-
 </style>
-<title>Spring MVC</title>
+
+<title>Success</title>
+
+
 
 </head>
 <body>
-		<div id="container">
+
+<div id="container">
 		<div id="header" style="font-size: 20pt">
 			GC Coffee <br> serving Java for Java<br>
 		</div>
-		</div>
-	<br>
-	<div id="content">
-		<h2>
-			Hello!<br>
-		</h2>
-		<h3>
-			Welcome to GC COFFEE <br>
-			<a href="welcome.html">Registration!</a> <br>
-			<a href="welcome2.html">Browse Items!</a>
-			
-		</h3>
 	</div>
+
+<div id="content">
+
+	<h2>Available Items</h2>
+	<br>
+	<table border="1">
+		<c:forEach items="${message}" var="list">
+			<tr>
+				<td><c:out value="${list}"></c:out></td>
+			</tr>
+
+		</c:forEach>
+
+	</table>
+
+
+</div>
+
 </body>
 </html>
